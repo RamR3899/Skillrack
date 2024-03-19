@@ -24,30 +24,24 @@ Output:
 2549
 */
 import java.util.*;
-public class Hello {
 
+class Hello {
     public static void main(String[] args) {
-		Scanner in=new Scanner(System.in);
-		String str=in.next();
-		char s[]=str.toCharArray();
-		String st=" ";
-		for(int i=0;i<s.length;i++)
-		{
-		    if(i%2!=0)
-		    {
-		        int n=s[i]-'0';
-		        int sq=n*n;
-		        st+=Integer.toString(sq);
-		    }
-		}
-		if(st.length()>=4)
-		{
-		    System.out.print(st.substring(0,5));
-		}
-		else
-		{
-		    System.out.print("-1");
-		}
-
-	}
+        Scanner in = new Scanner(System.in);
+        String str = in.next();
+        char s[] = str.toCharArray();
+        String st = " ";
+        for (int i = 0; i < s.length; i++) {
+            if (i % 2 != 0) {
+                int n = s[i] - '0';
+                int sq = n * n;
+                st += Integer.toString(sq);
+            }
+        }
+        if (st.length() >= 4) {
+            System.out.print(st.substring(0, 5));
+        } else {
+            System.out.print("-1");
+        }
+    }
 }
